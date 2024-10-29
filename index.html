@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Epshita Vutla Profile</title>
+    <script>
+        function toggleDetails(event) {
+            const details = event.nextElementSibling;
+            details.style.display = details.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <img src="epshitha.jpg" alt="Epshita Vutla" class="profile-img">
+        <h1>Epshita Vutla</h1>
+        <p class="subtitle">Engineering Student Data Science Enthusiast</p>
+    </div>
+</header>
+
+<section class="about">
+    <div class="container">
+        <h2 onclick="toggleDetails(this)">About Me</h2>
+        <p class="details">Hello! I'm Epshita Vutla, an engineering undergraduate in Computer Science with Data Science from Raghu Institute of Technology, Visakhapatnam.</p>
+    </div>
+</section>
+
+<section class="skills">
+    <div class="container">
+        <h2 onclick="toggleDetails(this)">Skills</h2>
+        <ul class="details">
+            <li>Data Science</li>
+            <li>Data Visualization</li>
+            <li>SQL</li>
+            <li>Python Programming</li>
+        </ul>
+    </div>
+</section>
+
+<section class="education">
+    <div class="container">
+        <h2 onclick="toggleDetails(this)">Education</h2>
+        <p class="details"><strong>Raghu Institute of Technology</strong> Engineering Student, Visakhapatnam</p>
+    </div>
+</section>
+
+<section class="projects">
+    <div class="container">
+        <h2 onclick="toggleDetails(this)">Projects & Internships</h2>
+        <div class="details">
+            <div class="project-item">
+                <h3>Data Analytics and Data Visualization using Power BI</h3>
+                <p>Completed four-week internship at Phoenix Global, Hyderabad.</p>
+            </div>
+            <div class="project-item">
+                <h3>Data Science with Python Internship</h3>
+                <p>Participated in an 8-week virtual internship supported by Verzeo.</p>
+            </div>
+            <div class="project-item">
+                <h3>Satellite Image to Google Map Image Translation</h3>
+                <p>Completed project at Raghu Institute of Technology, scoring 95% on the final exam.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Epshita Vutla</p>
+    </div>
+</footer>
+
+</body>
+</html>
